@@ -1,0 +1,116 @@
+p, li button{font-family:sans-serif}
+p {font-size: 1.7rem;}
+body{
+    gap: 10px;
+    margin: 20px;
+    display: flex;
+    min-height: 100%;
+    flex-flow: column;
+    align-items: stretch;
+    background-color: rgba(33, 29, 23, 1);
+}
+main, header{
+    width: 100%;
+}
+header{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba( 255, 255, 255, .1 );
+}
+header nav {
+    margin: 0 auto;
+}
+header nav ul{
+    margin: 0px;
+}
+header nav ul li{
+    width: 165px;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+}
+header nav ul li button{
+    padding: 0;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2.2rem;
+    border-radius: 2px;
+    border-style: none;
+    background-color: transparent;
+}
+header nav ul li button:hover{
+    background-color: white;
+    color: rgba(33, 29, 23, 1);
+}
+main{
+    flex: 99;
+}
+section{
+    gap: 10px;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+}
+article{
+    padding: 16px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+/* Container classes */
+section.above-the-fold{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+section.above-the-fold article{
+    display: flex;
+    flex-flow: column;
+    background-color: rgba( 255, 255, 255, .1 );
+    gap: 20px;
+    align-items: baseline;
+}
+section.above-the-fold article .cards-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+section.above-the-fold .card{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-flow: column nowrap;
+    background-color: white;
+    width: 300px;
+}
+section.above-the-fold .card img{
+    height: 200px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+section.above-the-fold .banner{
+    display: flex;
+    border-radius: 5px;
+    flex-flow: row wrap;
+    background-color: white;
+    width: 100%;
+    justify-content:space-around;
+}
+section.above-the-fold .banner img{
+    object-fit: cover;
+    aspect-ratio: 2/1;
+}
+footer{
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    background-color: rgba( 255, 255, 255, .1 );
+}
+#main-banner .banner-image{
+    background-image: url('./img/dessert-sundown.jpg');
+}
